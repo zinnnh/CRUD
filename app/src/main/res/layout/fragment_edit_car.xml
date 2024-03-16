@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Car"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextLicensePlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="License Plate"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Brand"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Model"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextSeats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Seats"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/textViewTransmission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Truyền động:"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextSeats"
+        android:layout_marginTop="24dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerTransmission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTransmission"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"/>
+
+    <TextView
+        android:id="@+id/textViewFuelType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loại nhiên liệu:"
+        android:textSize="18sp"
+        android:layout_below="@id/spinnerTransmission"
+        android:layout_marginTop="24dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerFuelType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFuelType"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

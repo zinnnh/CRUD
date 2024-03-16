@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewLicensePlate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biển số xe:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextLicensePlate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewLicensePlate"
+            android:hint="Nhập biển số xe"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:id="@+id/textViewBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hãng xe:"
+            android:textSize="18sp"
+            android:layout_below="@id/editTextLicensePlate"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/editTextBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewBrand"
+            android:hint="Nhập hãng xe"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:id="@+id/textViewModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mẫu xe:"
+            android:textSize="18sp"
+            android:layout_below="@id/editTextBrand"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/editTextModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewModel"
+            android:hint="Nhập mẫu xe"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:id="@+id/textViewSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số ghế:"
+            android:textSize="18sp"
+            android:layout_below="@id/editTextModel"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/editTextSeats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewSeats"
+            android:hint="Nhập số ghế"
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:id="@+id/textViewTransmission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Truyền động:"
+            android:textSize="18sp"
+            android:layout_below="@id/editTextSeats"
+            android:layout_marginTop="24dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerTransmission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTransmission"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:id="@+id/textViewFuelType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại nhiên liệu:"
+            android:textSize="18sp"
+            android:layout_below="@id/spinnerTransmission"
+            android:layout_marginTop="24dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerFuelType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewFuelType"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"/>
+
+        <!-- Spacer để tạo khoảng cách dưới cùng của layout -->
+        <Space
+            android:id="@+id/bottomSpace"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/spinnerFuelType" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiếp tục"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="24dp"/>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
